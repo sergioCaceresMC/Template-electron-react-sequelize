@@ -8,7 +8,7 @@ export function registerIpcUser() {
     return users.map((p) => p.toJSON()); // Sequelize devuelve objetos, ¡esto se serializa!
   });
 
-  ipcMain.handle("actualizarusuario", async (event, { id, data }) => {
+  ipcMain.handle("actualizarusuario", async (_event, { id, data }) => {
     return await user.update_user_by_id(id, data);
   });
 }
