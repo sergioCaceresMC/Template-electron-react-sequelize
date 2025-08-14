@@ -1,8 +1,8 @@
 {
-  "appId": "com.miitha.docu",
+  "appId": "com.mitha.template",
   "files": ["dist-react", "dist-electron"],
   "extraResources": ["dist-electron/preload.cjs"],
-  "icon": "./doculogo.png",
+  "icon": "./template.png",
   "mac": {
     "target": "dmg"
   },

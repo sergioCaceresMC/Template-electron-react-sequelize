@@ -103,6 +103,27 @@ En la carpeta de package.json puedes encontrar la configuración referente de la
 }
 ```
 
+También se incluyen electron-builder.json en donde está la configuración del ejecutable con la versíon y otras características:
+
+```json
+{
+  "appId": "com.mitha.template",
+  "files": ["dist-react", "dist-electron"],
+  "extraResources": ["dist-electron/preload.cjs"],
+  "icon": "./template.png",
+  "mac": {
+    "target": "dmg"
+  },
+  "linux": {
+    "target": "AppImage",
+    "category": "Utility"
+  },
+  "win": {
+    "target": ["portable", "msi"]
+  }
+}
+```
+
 ## Entorno de desarrollo y producción
 
 Para iniciar la aplicación en modo de desarrollo necesitas ejecutar el comando
